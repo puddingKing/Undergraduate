@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+     <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_return"
+        
+ />
+    
+     <GridView
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:columnWidth="270dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:layout_below="@id/button_return"
+    
+    />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button1" />
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#7B68EE"
+        android:text="社会救助"
+        android:textSize="32sp" 
+        android:textStyle="bold"
+        android:textScaleX="1"  />
+    
+    </RelativeLayout>
+    
+   
+
+</LinearLayout>
+
+<!-- android:verticalSpacing="10dp" grid元素之间的竖直间隔 -->
+<!-- android:horizontalSpacing="10dp"  grid元素之间的水平间隔  -->
+<!-- android:numColumns="auto_fit" 表示有多少列，如果设置为auto_fit，将根据columnWidth和Spacing来自动计算 -->
+<!-- android:columnWidth="270dp" 一般建议采用有像素密度无关的dip或者dp来表示-->
+<!-- android:stretchMode="columnWidth" 如何填满空余的位置，模拟器采用WVGA800*480，
+                                                                                                                                        每排4列，有4＊100＋5＊3＝415，
+                                                                                                                                        还余65px的空间，如果是columnWidth，
+                                                                                                                                        则这剩余的65将分摊给4列，
+                                                                                                                                        每列增加16/17px。如果采用SpacingWidth，
+                                                                                                                                        则分摊给3个间隔空隙 -->

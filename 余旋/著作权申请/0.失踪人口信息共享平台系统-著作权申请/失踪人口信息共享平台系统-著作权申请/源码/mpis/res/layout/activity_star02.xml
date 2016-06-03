@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@drawable/guide05"
+                android:layout_height="match_parent">
+                
+
+	<android.support.v4.view.ViewPager
+			android:id="@+id/viewpager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center">
+	</android.support.v4.view.ViewPager>
+
+	<LinearLayout
+			android:gravity="center_horizontal"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_marginBottom="70dp"
+			android:layout_alignParentBottom="true"
+			android:layout_height="wrap_content">
+
+		<ImageView
+				android:id="@+id/v1"
+				android:layout_margin="10dp"
+				android:contentDescription="@string/navigation_point"
+				android:background="@drawable/page_indicator_focused"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		<ImageView
+				android:id="@+id/v2"
+				android:layout_margin="10dp"
+				android:contentDescription="@string/navigation_point"
+				android:background="@drawable/page_indicator_unfocused"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		<ImageView
+				android:id="@+id/v3"
+				android:layout_margin="10dp"
+				android:contentDescription="@string/navigation_point"
+				android:background="@drawable/page_indicator_unfocused"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		<ImageView
+				android:id="@+id/v4"
+				android:layout_margin="10dp"
+				android:contentDescription="@string/navigation_point"
+				android:background="@drawable/page_indicator_unfocused"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		<ImageView
+				android:id="@+id/v5"
+				android:layout_margin="10dp"
+				android:contentDescription="@string/navigation_point"
+				android:background="@drawable/page_indicator_unfocused"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	<Button
+	    android:id="@+id/buttonskip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/button_skip"
+	    />
+	
+</RelativeLayout>

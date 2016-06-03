@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+    
+<RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+ 
+
+
+
+   
+   <TextView
+       android:id="@+id/text01"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/button_return"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="40dp"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:background="@drawable/white_bg"
+       android:text="1.【常识问答】儿童或14岁以上、18岁以下的少女失踪或走失，以及有被拐嫌疑的18岁以上成年女性，多久可报案？\n\nA：失踪24小时\nB：失踪48小时\nC：第一时间报案\nD：失踪72小时\n\n答案：C" />
+    
+    <TextView
+       android:id="@+id/text02"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/button_return"
+       android:layout_centerHorizontal="true"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:background="@drawable/white_bg"
+       android:layout_marginTop="350dp"
+       android:text="2.【常识问答】以下哪个网址是中国失踪人口档案库的网址？\n\nA. http://www.zgszrkdak.com/\nB. http://www.zgszrkdak.com.cn\nC. http://zgszrkdak.com\nD. http:/www.zgszrkdak.com\n\n答案：A" />
+   
+    </RelativeLayout>
+    
+    
+    
+</ScrollView>
+
+
+
+   
+
+        
+
+
+
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bb"
+      android:versionCode="4"
+      android:versionName="1.2.1">
+     
+     
+
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    
+ 
+	<!-- 读写SD卡权限-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+     <!-- 写入SD卡数据权限 --> 
+     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+   
+     
+    <application  android:label="@string/app_name"
+                  android:icon="@drawable/appname">
+
+		<activity android:name="com.bylw.mpis.Star01Activity"  android:label="@string/app_name" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity   android:name="edu.self.RegisterAccountActivity"    android:screenOrientation="portrait"/>
+        <activity   android:name="com.bylw.mpis.Star02Activity"             android:screenOrientation="portrait"/>
+        <activity   android:name="com.bylw.mpis.Main06Activity"              android:screenOrientation="portrait"/>
+        <activity   android:name="com.bylw.mpis.StrategyActivity"              android:screenOrientation="portrait"/>
+        <activity   android:name="com.bylw.mpis.Main04Activity"              android:screenOrientation="portrait"/>
+        
+        <activity   android:name="edu.self.LoginActivity"                    android:screenOrientation="portrait"/>
+        
+		
+		
+		<activity android:name=".Main" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+            
+        <activity android:name=".About" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+        <activity android:name=".Logout" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+        
+		<activity android:name=".ui.InfoTabActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+		<activity android:name=".ui.InfoListActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+	
+		<activity android:name=".ui.ViewInfoActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+			
+		
+		<activity android:name=".ui.MyListActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+		<activity android:name=".ui.UpdateUserInfoActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>  
+		<activity android:name=".ui.UserInfoActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>  
+		
+		
+		
+		<activity android:name=".ui.InfoActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>  
+		
+		
+		
+		<activity android:name=".ui.SearchListActivity" android:label="失踪人口信息共享平台" android:screenOrientation="portrait"/>
+		
+		
+		
+		
+    </application>
+    
+    <uses-sdk android:minSdkVersion="8" />
+    
+      
+    
+    
+</manifest> 
